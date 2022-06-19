@@ -1,0 +1,71 @@
+<?xml version="1.0" standalone="no"?>
+<ROM IC="ADAU1701" IC_Address="104" Address_byte_length="2">
+  <dateTime>2021-08-03T22:12:55.6892272Z</dateTime>
+  <version>4.2.1.1764</version>
+  <page modetype="setvol">
+    <action instr="writeSafeload" len="6" addr="217" AddrIncr="0" CellName="Outputs.PhoneVol" ParamName="SWGain1940DBAlg2target" DspName="IC 1">00 80 00 00</action>
+    <action instr="writeSafeload" len="6" addr="0" AddrIncr="0" CellName="Outputs.ReproVol" ParamName="SWGain1940DBAlg1step" DspName="IC 1">00 00 08 00</action>
+  </page>
+  <page modetype="bb_sel">
+    <action instr="writeXbytes" len="6" addr="152" AddrIncr="0" CellName="Outputs.Nx2-1" ParamName="StMuxSwSlew1coeffname" DspName="IC 1">00 00 00 01</action>
+  </page>
+  <page modetype="sp_sel">
+    <action instr="writeXbytes" len="6" addr="152" AddrIncr="0" CellName="Outputs.Nx2-1" ParamName="StMuxSwSlew1coeffname" DspName="IC 1">00 00 00 00</action>
+  </page>
+  <page modetype="norm_sel">
+    <action instr="writeXbytes" len="6" addr="152" AddrIncr="0" CellName="Outputs.Nx2-1" ParamName="StMuxSwSlew1coeffname" DspName="IC 1">00 00 00 02</action>
+  </page>
+  <page modetype="sb_sel">
+    <action instr="writeXbytes" len="6" addr="193" AddrIncr="0" CellName="Outputs.SuperBass1" ParamName="SuperBassAlgSWSlew1bypass" DspName="IC 1">00 00 00 00</action>
+  </page>
+  <page modetype="mute">
+    <action instr="writeSafeload" len="6" addr="3" AddrIncr="0" CellName="Inputs.MuteAIN" ParamName="MuteSWSlewAlg3mute" DspName="IC 1">00 00 00 00</action>
+    <action instr="writeXbytes" len="6" addr="4" AddrIncr="0" CellName="Inputs.MuteAIN" ParamName="MuteSWSlewAlg3step" DspName="IC 1">00 00 10 00</action>
+  </page>
+  <page modetype="unmute">
+    <action instr="writeSafeload" len="6" addr="3" AddrIncr="0" CellName="Inputs.MuteAIN" ParamName="MuteSWSlewAlg3mute" DspName="IC 1">00 80 00 00</action>
+    <action instr="writeXbytes" len="6" addr="4" AddrIncr="0" CellName="Inputs.MuteAIN" ParamName="MuteSWSlewAlg3step" DspName="IC 1">00 00 10 00</action>
+  </page>
+  <page modetype="mixer0">
+    <action instr="writeSafeload" len="6" addr="19" AddrIncr="0" CellName="Inputs.InputMixer" ParamName="StereoMixerAlgSlew12" DspName="IC 1">00 80 00 00</action>
+  </page>
+  <page modetype="mixertone">
+    <action instr="writeSafeload" len="6" addr="24" AddrIncr="0" CellName="Inputs.InputMixer" ParamName="StereoMixerAlgSlew112" DspName="IC 1">00 80 00 00</action>
+  </page>
+  <page modetype="eq_100_max">
+    <action instr="writeSafeload" len="6" addr="25" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual10B1" DspName="IC 1">00 80 58 A0</action>
+    <action instr="writeSafeload" len="6" addr="26" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual11B1" DspName="IC 1">FF 00 E4 4B</action>
+    <action instr="writeSafeload" len="6" addr="27" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual12B1" DspName="IC 1">00 7E C5 91</action>
+    <action instr="writeSafeload" len="6" addr="28" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual11A1" DspName="IC 1">00 FF 1C 8F</action>
+    <action instr="writeSafeload" len="6" addr="29" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual12A1" DspName="IC 1">FF 80 E2 A8</action>
+    <action instr="writeSafeload" len="6" addr="25" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual10B1" DspName="IC 1">00 80 58 A0</action>
+    <action instr="writeSafeload" len="6" addr="26" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual11B1" DspName="IC 1">FF 00 E4 4B</action>
+    <action instr="writeSafeload" len="6" addr="27" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual12B1" DspName="IC 1">00 7E C5 91</action>
+    <action instr="writeSafeload" len="6" addr="28" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual11A1" DspName="IC 1">00 FF 1C 8F</action>
+    <action instr="writeSafeload" len="6" addr="29" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual12A1" DspName="IC 1">FF 80 E2 A8</action>
+  </page>
+  <page modetype="eq_100_min">
+    <action instr="writeSafeload" len="6" addr="25" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual10B1" DspName="IC 1">00 7F A7 9D</action>
+    <action instr="writeSafeload" len="6" addr="26" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual11B1" DspName="IC 1">FF 01 93 9B</action>
+    <action instr="writeSafeload" len="6" addr="27" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual12B1" DspName="IC 1">00 7E C5 91</action>
+    <action instr="writeSafeload" len="6" addr="28" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual11A1" DspName="IC 1">00 FE 6B 8C</action>
+    <action instr="writeSafeload" len="6" addr="29" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual12A1" DspName="IC 1">FF 81 91 F9</action>
+    <action instr="writeSafeload" len="6" addr="25" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual10B1" DspName="IC 1">00 7F A7 9D</action>
+    <action instr="writeSafeload" len="6" addr="26" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual11B1" DspName="IC 1">FF 01 93 9B</action>
+    <action instr="writeSafeload" len="6" addr="27" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual12B1" DspName="IC 1">00 7E C5 91</action>
+    <action instr="writeSafeload" len="6" addr="28" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual11A1" DspName="IC 1">00 FE 6B 8C</action>
+    <action instr="writeSafeload" len="6" addr="29" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual12A1" DspName="IC 1">FF 81 91 F9</action>
+  </page>
+  <page modetype="eq_100_0">
+    <action instr="writeSafeload" len="6" addr="25" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual10B1" DspName="IC 1">00 80 00 00</action>
+    <action instr="writeSafeload" len="6" addr="26" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual11B1" DspName="IC 1">FF 01 2F 4C</action>
+    <action instr="writeSafeload" len="6" addr="27" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual12B1" DspName="IC 1">00 7E D2 19</action>
+    <action instr="writeSafeload" len="6" addr="28" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual11A1" DspName="IC 1">00 FE D0 B4</action>
+    <action instr="writeSafeload" len="6" addr="29" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual12A1" DspName="IC 1">FF 81 2D E7</action>
+    <action instr="writeSafeload" len="6" addr="25" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual10B1" DspName="IC 1">00 80 00 00</action>
+    <action instr="writeSafeload" len="6" addr="26" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual11B1" DspName="IC 1">FF 01 2F 4C</action>
+    <action instr="writeSafeload" len="6" addr="27" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual12B1" DspName="IC 1">00 7E D2 19</action>
+    <action instr="writeSafeload" len="6" addr="28" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual11A1" DspName="IC 1">00 FE D0 B4</action>
+    <action instr="writeSafeload" len="6" addr="29" AddrIncr="0" CellName="EQ." ParamName="EQ1940Dual12A1" DspName="IC 1">FF 81 2D E7</action>
+  </page>
+</ROM>

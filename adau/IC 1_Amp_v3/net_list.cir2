@@ -1,0 +1,42 @@
+0 ICSigma100In1 O_C426_A0_P1_out Link31 O_C426_A0_P2_out Link32 O_C426_A0_P3_out Link33 O_C426_A0_P4_out Link34 O_C426_A0_P5_out Link35 O_C426_A0_P6_out Link36 O_C426_A0_P7_out Link38 O_C426_A0_P8_out Link37 O_C426_A0_P9_out Link39 O_C426_A0_P10_out Link40
+1 sin_lookupAlg19401 O_C115_A0_P1_out Link52
+2 AdderAlg1 I_C680_A0_P2_in Link31 I_C680_A0_P3_in Link32 O_C680_A0_P1_out Link2
+3 AdderAlg7 I_C767_A0_P2_in Link33 I_C767_A0_P3_in Link34 O_C767_A0_P1_out Link3
+4 AdderAlg3 I_C806_A0_P2_in Link35 I_C806_A0_P3_in Link36 O_C806_A0_P1_out Link4
+5 AdderAlg4 I_C844_A0_P2_in Link38 I_C844_A0_P3_in Link37 O_C844_A0_P1_out Link5
+6 AdderAlg5 I_C888_A0_P2_in Link39 I_C888_A0_P3_in Link40 O_C888_A0_P1_out Link6
+7 monomux1940ns1 I_C1025_A0_P2_in Link2 I_C1025_A0_P3_in Link3 I_C1025_A0_P4_in Link4 I_C1025_A0_P5_in Link5 I_C1025_A0_P6_in Link6 O_C1025_A0_P1_out Link41
+8 MuteSWSlewAlg3 I_C185_A0_P1_in Link31 I_C185_A0_P3_in Link32 O_C185_A0_P2_out Link19 O_C185_A0_P4_out Link20
+9 MuteSWSlewAlg1 I_C437_A0_P1_in Link33 I_C437_A0_P3_in Link34 O_C437_A0_P2_out Link21 O_C437_A0_P4_out Link22
+10 MuteSWSlewAlg2 I_C442_A0_P1_in Link35 I_C442_A0_P3_in Link36 O_C442_A0_P2_out Link23 O_C442_A0_P4_out Link24
+11 MuteSWSlewAlg4 I_C629_A0_P1_in Link38 I_C629_A0_P3_in Link37 O_C629_A0_P2_out Link25 O_C629_A0_P4_out Link26
+12 MuteSWSlewAlg5 I_C642_A0_P1_in Link39 I_C642_A0_P3_in Link40 O_C642_A0_P2_out Link27 O_C642_A0_P4_out Link28
+13 StereoMixerAlgSlew1 I_C447_A0_P3_in Link19 I_C447_A0_P4_in Link20 I_C447_A0_P5_in Link21 I_C447_A0_P6_in Link22 I_C447_A0_P7_in Link23 I_C447_A0_P8_in Link24 I_C447_A0_P9_in Link25 I_C447_A0_P10_in Link26 I_C447_A0_P11_in Link27 I_C447_A0_P12_in Link28 I_C447_A0_P13_in Link52 I_C447_A0_P14_in Link52 O_C447_A0_P1_out Link17 O_C447_A0_P2_out Link18
+14 DCBlockAlgDoublePrec2 I_C970_A0_P1_in Link41 O_C970_A0_P2_out Link1
+15 DCBlockAlgDoublePrec1 I_C380_A0_P1_in Link17 O_C380_A0_P2_out Link55
+16 DCBlockAlgDoublePrec4 I_C380_A1_P1_in Link18 O_C380_A1_P2_out Link56
+17 MonoEnvelopePeakAlg3 I_C672_A0_P1_in Link1 O_C672_A0_P2_out Link0
+18 RegReadIntOutAlg2 I_C675_A0_P1_in Link0
+19 SWGain1940DBAlg3 I_C74_A0_P1_in Link55 O_C74_A0_P2_out Link53
+20 SWGain1940DBAlg2 I_C66_A0_P1_in Link56 O_C66_A0_P2_out Link54
+21 EQ1940Dual1 I_C366_A0_P1_in Link53 I_C366_A0_P2_in Link54 O_C366_A0_P3_out Link29 O_C366_A0_P4_out Link30
+22 stereomux1940ns3 I_C0_A0_P3_in Link29 I_C0_A0_P4_in Link30 I_C0_A0_P5_in Link53 I_C0_A0_P6_in Link54 O_C0_A0_P1_out Link46 O_C0_A0_P2_out Link47
+23 PhatStereoAlg19401 I_C7_A0_P1_in Link46 I_C7_A0_P2_in Link47 O_C7_A0_P3_out Link42 O_C7_A0_P4_out Link43
+24 BassBAlg_stereo1 I_C170_A0_P1_in Link42 I_C170_A0_P2_in Link43 O_C170_A0_P3_out Link8 O_C170_A0_P4_out Link7
+25 stereomux1940ns1 I_C195_A0_P3_in Link8 I_C195_A0_P4_in Link7 I_C195_A0_P5_in Link42 I_C195_A0_P6_in Link43 O_C195_A0_P1_out Link44 O_C195_A0_P2_out Link45
+26 SuperPhatAlg1 I_C100_A0_P1_in Link44 I_C100_A0_P2_in Link45 O_C100_A0_P3_out Link10 O_C100_A0_P4_out Link9
+27 stereomux1940ns2 I_C216_A0_P3_in Link10 I_C216_A0_P4_in Link9 I_C216_A0_P5_in Link44 I_C216_A0_P6_in Link45 O_C216_A0_P1_out Link11 O_C216_A0_P2_out Link12
+28 SuperBassAlgSWSlew1 I_C161_A0_P1_in Link11 I_C161_A0_P2_in Link12 O_C161_A0_P3_out Link49 O_C161_A0_P4_out Link48
+29 ICSigma100Out4 I_C528_A0_P1_in Link48
+30 SWGain1940DBAlg1 I_C67_A0_P1_in Link49 I_C67_A0_P3_in Link48 O_C67_A0_P2_out Link50 O_C67_A0_P4_out Link51
+31 ICSigma100Out3 I_C526_A0_P1_in Link49
+32 MonoEnvelopePeakAlg2 I_C308_A0_P1_in Link48 O_C308_A0_P2_out Link14
+33 MonoEnvelopePeakAlg1 I_C276_A0_P1_in Link49 O_C276_A0_P2_out Link13
+34 RegReadIntOutAlg3 I_C285_A0_P1_in Link13
+35 RegReadIntOutAlg1 I_C314_A0_P1_in Link14
+36 MonoEnvelopePeakAlg5 I_C1124_A0_P1_in Link50 O_C1124_A0_P2_out Link16
+37 MonoEnvelopePeakAlg4 I_C1116_A0_P1_in Link51 O_C1116_A0_P2_out Link15
+38 ICSigma100Out1 I_C522_A0_P1_in Link50
+39 ICSigma100Out2 I_C524_A0_P1_in Link51
+40 RegReadIntOutAlg4 I_C1119_A0_P1_in Link15
+41 RegReadIntOutAlg5 I_C1127_A0_P1_in Link16

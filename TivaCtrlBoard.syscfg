@@ -1,0 +1,225 @@
+// These arguments were used when this file was generated. They will be automatically applied on subsequent loads 
+// via the GUI or CLI invocations. Run CLI with '--help' for additional information on how to override these arguments.
+// @cliArgs --device "TM4C123x" --package "64 Pin QFP|16x16" --part "TM4C123GH6PM"
+// @versions {"data":"2020022712","timestamp":"2020022712","tool":"1.3.1030","templates":"2020022712"}
+
+var iADC1 = scripting.addPeripheral("ADC");
+// Name
+iADC1.$name = "IOAIN";
+// Used
+iADC1.AIN4.$used = false;
+// Used
+iADC1.AIN6.$used = false;
+// Used
+iADC1.AIN1.$used = false;
+// Used
+iADC1.AIN3.$used = false;
+// Used
+iADC1.AIN11.$used = false;
+// Used
+iADC1.AIN10.$used = false;
+// Used
+iADC1.AIN7.$used = false;
+// Used
+iADC1.AIN5.$used = false;
+var iGPIO1 = scripting.addPeripheral("GPIO");
+// PU/PD
+iGPIO1["0"].pu_pd = "pu";
+// Assign pin
+iGPIO1["0"].$assign = "PC7"; // pin number - 13
+// Name
+iGPIO1.$name = "Encoder_SW";
+var iGPIO2 = scripting.addPeripheral("GPIO");
+// PU/PD
+iGPIO2["0"].pu_pd = "pu";
+// Assign pin
+iGPIO2["0"].$assign = "PD6"; // pin number - 53
+// Name
+iGPIO2.$name = "SW1";
+var iGPIO3 = scripting.addPeripheral("GPIO");
+// PU/PD
+iGPIO3["0"].pu_pd = "pu";
+// Assign pin
+iGPIO3["0"].$assign = "PD7"; // pin number - 10
+// Name
+iGPIO3.$name = "SW2";
+var iGPIO4 = scripting.addPeripheral("GPIO");
+// IO
+iGPIO4["0"].io = "output";
+// Assign pin
+iGPIO4["0"].$assign = "PA0"; // pin number - 17
+// Name
+iGPIO4.$name = "LCD_D_C";
+var iGPIO5 = scripting.addPeripheral("GPIO");
+// IO
+iGPIO5["0"].io = "output";
+// Assign pin
+iGPIO5["0"].$assign = "PA1"; // pin number - 18
+// Name
+iGPIO5.$name = "LCD_nRES";
+var iGPIO6 = scripting.addPeripheral("GPIO");
+// PU/PD
+iGPIO6["0"].pu_pd = "pu";
+// IO
+iGPIO6["0"].io = "outputOpenDrain";
+// Assign pin
+iGPIO6["0"].$assign = "PB5"; // pin number - 57
+// Name
+iGPIO6.$name = "ADAU_RES";
+var iGPIO7 = scripting.addPeripheral("GPIO");
+// Number of GPIO pins
+iGPIO7.$numPins = 6;
+// IO
+iGPIO7["0"].io = "output";
+// Assign pin
+iGPIO7["0"].$assign = "PA4"; // pin number - 21
+// Used
+iGPIO7["0"].$used = false;
+// IO
+iGPIO7["1"].io = "output";
+// Assign pin
+iGPIO7["1"].$assign = "PF4"; // pin number - 5
+// PU/PD
+iGPIO7["2"].pu_pd = "pu";
+// IO
+iGPIO7["2"].io = "output";
+// Assign pin
+iGPIO7["2"].$assign = "PC4"; // pin number - 16
+// Used
+iGPIO7["2"].$used = false;
+// PU/PD
+iGPIO7["3"].pu_pd = "pd";
+// Assign pin
+iGPIO7["3"].$assign = "PD0"; // pin number - 61
+// PU/PD
+iGPIO7["4"].pu_pd = "pd";
+// Assign pin
+iGPIO7["4"].$assign = "PD2"; // pin number - 63
+// PU/PD
+iGPIO7["5"].pu_pd = "pu";
+// Assign pin
+iGPIO7["5"].$assign = "PD3"; // pin number - 64
+// Name
+iGPIO7.$name = "IOPINS";
+var iGPIO8 = scripting.addPeripheral("GPIO");
+// PU/PD
+iGPIO8["0"].pu_pd = "pu";
+// IO
+iGPIO8["0"].io = "outputOpenDrain";
+// Assign pin
+iGPIO8["0"].$assign = "PD1"; // pin number - 62
+// Name
+iGPIO8.$name = "HW_MUTE";
+var iGPIO9 = scripting.addPeripheral("GPIO");
+// Number of GPIO pins
+iGPIO9.$numPins = 4;
+// IO
+iGPIO9["0"].io = "output";
+// Assign pin
+iGPIO9["0"].$assign = "PA4"; // pin number - 21
+// IO
+iGPIO9["1"].io = "output";
+// Assign pin
+iGPIO9["1"].$assign = "PC4"; // pin number - 16
+// IO
+iGPIO9["2"].io = "output";
+// Assign pin
+iGPIO9["2"].$assign = "PE2"; // pin number - 7
+// IO
+iGPIO9["3"].io = "output";
+// Assign pin
+iGPIO9["3"].$assign = "PE0"; // pin number - 9
+// Name
+iGPIO9.$name = "RELAYS";
+var iI2C1 = scripting.addPeripheral("I2C");
+// Name
+iI2C1.$name = "OLED_I2C";
+// Use Peripheral
+iI2C1.$assign = "I2C1";
+var iI2C2 = scripting.addPeripheral("I2C");
+// Name
+iI2C2.$name = "Ext_I2C";
+// Use Peripheral
+iI2C2.$assign = "I2C0";
+var iPWM1 = scripting.addPeripheral("PWM");
+// Name
+iPWM1.$name = "RGB_LED_BL";
+// Use Peripheral
+iPWM1.$assign = "PWM1";
+// Used
+iPWM1.PWM0.$used = false;
+// Used
+iPWM1.FAULT0.$used = false;
+// Used
+iPWM1.PWM1.$used = false;
+// Used
+iPWM1.PWM3.$used = false;
+// Used
+iPWM1.PWM2.$used = false;
+var iQEI1 = scripting.addPeripheral("QEI");
+// Name
+iQEI1.$name = "Encoder";
+// Use Peripheral
+iQEI1.$assign = "QEI1";
+// Used
+iQEI1.IDX.$used = false;
+var iSSI1 = scripting.addPeripheral("SSI");
+// Name
+iSSI1.$name = "LCD_disp";
+// Use Peripheral
+iSSI1.$assign = "SSI0";
+// Used
+iSSI1.RX.$used = false;
+var iUSB1 = scripting.addPeripheral("USB");
+// Name
+iUSB1.$name = "USB_DEVICE";
+// Used
+iUSB1.EPEN.$used = false;
+// Used
+iUSB1.PFLT.$used = false;
+// Suggest solution
+iADC1.$suggestSolution = "ADC1";
+// Suggest solution
+iADC1.AIN0.$suggestSolution = "6";
+// Suggest solution
+iADC1.AIN9.$suggestSolution = "59";
+// Suggest solution
+iADC1.AIN8.$suggestSolution = "60";
+// Suggest solution
+iADC1.AIN2.$suggestSolution = "8";
+// Suggest solution
+iI2C1.SCL.$suggestSolution = "23";
+// Suggest solution
+iI2C1.SDA.$suggestSolution = "24";
+// Suggest solution
+iI2C2.SCL.$suggestSolution = "47";
+// Suggest solution
+iI2C2.SDA.$suggestSolution = "48";
+// Suggest solution
+iPWM1.PWM4.$suggestSolution = "28";
+// Suggest solution
+iPWM1.PWM7.$suggestSolution = "31";
+// Suggest solution
+iPWM1.PWM6.$suggestSolution = "30";
+// Suggest solution
+iPWM1.PWM5.$suggestSolution = "29";
+// Suggest solution
+iQEI1.PHA.$suggestSolution = "15";
+// Suggest solution
+iQEI1.PHB.$suggestSolution = "14";
+// Suggest solution
+iSSI1.FSS.$suggestSolution = "20";
+// Suggest solution
+iSSI1.TX.$suggestSolution = "22";
+// Suggest solution
+iSSI1.CLK.$suggestSolution = "19";
+// Suggest solution
+iUSB1.$suggestSolution = "USB0";
+// Suggest solution
+iUSB1.VBUS.$suggestSolution = "46";
+// Suggest solution
+iUSB1.DP.$suggestSolution = "44";
+// Suggest solution
+iUSB1.DM.$suggestSolution = "43";
+// Suggest solution
+iUSB1.ID.$suggestSolution = "45";
